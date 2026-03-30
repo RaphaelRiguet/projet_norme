@@ -391,6 +391,15 @@ a {
     margin-top: 10px;
 }
 
+.footer-social span{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer-social span:hover{
+    opacity: 0.7;
+}
+
 
 /* ============================================
    7. EN-TÊTES DE PAGES
