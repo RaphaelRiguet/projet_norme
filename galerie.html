@@ -17,23 +17,23 @@
 
 <body>
         <main>
-        <div class="navbar">
+        <section class="navbar">
             <div class="logo" onclick="window.location='index.html'">Le Palais des Saveurs</div>
             <div class="nav-items">
-                <div class="nav-link" onclick="window.location='index.html'">Accueil</div>
-                <div class="nav-link" onclick="window.location='menu.html'">Notre Carte</div>
-                <div class="nav-link" onclick="window.location='galerie.html'">Galerie</div>
-                <div class="nav-link" onclick="window.location='reservation.html'">Réservation</div>
-                <div class="nav-link" onclick="window.location='histoire.html'">Notre Histoire</div>
+                <a class="nav-link" href='index.html'>Accueil</a>
+                <a class="nav-link" href='menu.html'>Notre Carte</a>
+                <a class="nav-link" href='galerie.html'>Galerie</a>
+                <a class="nav-link" href='reservation.html'>Réservation</a>
+                <a class="nav-link" href='histoire.html'>Notre Histoire</a>
             </div>
-        </div>
+        </section>
 
-        <div class="page-header">
+        <section class="page-header">
             <h1 class="page-title">Galerie Photos</h1>
             <h2 class="page-subtitle">L'art culinaire en images</h2>
-        </div>
+        </section>
 
-        <div class="section-white">
+        <section class="section-white">
             <div class="container">
                 <div class="gallery-tabs">
                     <div class="gallery-tab active" onclick="filterGallery('tous')" style="background-color: #695516;">Tous</div>
@@ -128,9 +128,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section-dark">
+        <section class="section-dark">
             <div class="container" style="text-align: center;">
                 <div style="font-size: 32px; font-family: 'Playfair Display', serif; color: #d4af37; margin-bottom: 15px;">
                     Réservez votre table
@@ -141,7 +141,7 @@
                 </p>
                 <div class="btn-secondary" onclick="window.location='reservation.html'">Réserver maintenant</div>
             </div>
-        </div>
+        </section>
 
         <div class="footer">
             <div class="footer-content">
@@ -165,7 +165,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span style="color: #999;">© 2026 Le Palais des Saveurs - Tous droits réservés</span>
+                <span>© 2026 Le Palais des Saveurs - Tous droits réservés</span>
             </div>
         </div>
     </main>

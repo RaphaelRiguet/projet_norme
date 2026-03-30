@@ -48,6 +48,10 @@ body {
     gap: 35px;
 }
 
+.nav-items a {
+    text-decoration: none;
+}
+
 .nav-link {
     color: #e0e0e0;
     font-size: 15px;
