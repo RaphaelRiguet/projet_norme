@@ -48,7 +48,7 @@ body {
     gap: 35px;
 }
 
-.nav-items a {
+a {
     text-decoration: none;
 }
 
@@ -186,6 +186,19 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.container span{
+    font-size: 32px; 
+    font-family: 'Playfair Display', serif;
+    color: #d4af37; margin-bottom: 15px;
+}
+
+.container p{
+    color: #c9c9c9;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 30px;
 }
 
 .section-header {
@@ -481,7 +494,7 @@ body {
 }
 
 .gallery-tab.active {
-    background: #d4af37;
+    background: #695516;
     color: white;
 }
 
