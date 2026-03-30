@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <script src="./assets/js/script.js" defer></script>
 </head>
 
@@ -28,13 +29,13 @@
     </div>
 
     <div class="page-header">
-        <div class="page-title">Notre Carte</div>
+        <h1 class="page-title">Notre Carte</h1>
         <div class="page-subtitle">Un voyage culinaire d'exception</div>
     </div>
-
+<main>
     <div class="section-white">
         <div class="container">
-            <div class="menu-section">
+            <section class="menu-section">
                 <div class="menu-section-title">Entrées</div>
 
                 <div class="menu-grid">
@@ -45,7 +46,7 @@
                         </div>
                         <div class="menu-item-desc">Foie gras de canard du Sud-Ouest, chutney de figues et pain brioché
                         </div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;"><i
+                        <div class="menu-item-allergens"><i
                                 class="bi bi-exclamation-circle"></i> Gluten
                         </div>
                     </div>
@@ -57,7 +58,7 @@
                         </div>
                         <div class="menu-item-desc">Noix de Saint-Jacques snackées, purée de céleri et émulsion
                             d'agrumes</div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;"><i
+                        <div class="menu-item-allergens"><i
                                 class="bi bi-exclamation-circle"></i> Fruits de mer, Lactose
                         </div>
                     </div>
@@ -69,14 +70,14 @@
                         </div>
                         <div class="menu-item-desc">Fines tranches de boeuf, roquette, copeaux de parmesan et huile de
                             truffe</div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;"><i
+                        <div class="menu-item-allergens"><i
                                 class="bi bi-exclamation-circle"></i> Lactose
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="menu-section" style="margin-top: 60px;">
+            <section class="menu-section menu-section-spaced">
                 <div class="menu-section-title">Plats</div>
 
                 <div class="menu-grid">
@@ -96,7 +97,7 @@
                         </div>
                         <div class="menu-item-desc">Filet de bar cuit à la plancha, risotto crémeux aux asperges et
                             beurre blanc</div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;">
+                        <div class="menu-item-allergens">
                             <i class="bi bi-exclamation-circle"></i> Fruits de mer, Lactose, Gluten
                         </div>
                     </div>
@@ -110,24 +111,23 @@
                             Périgueux et truffes</div>
                     </div>
 
-                    <div class="menu-item"
-                        style="background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border: 2px solid #d4af37;">
+                    <div class="menu-item special-item">
                         <div class="menu-item-header">
                             <div class="menu-item-name">Homard Breton</div>
                             <div class="menu-item-price">65€</div>
                         </div>
                         <div class="menu-item-desc">Demi-homard rôti au beurre d'algues, risotto aux fruits de mer</div>
-                        <div style="color: #d4af37; font-size: 13px; font-weight: 600; margin-top: 8px;"><i
+                        <div class="special-text"><i
                                 class="bi bi-star-fill"></i> Spécialité du
                             Chef</div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;">
+                        <div class="menu-item-allergens">
                             <i class="bi bi-exclamation-circle"></i> Fruits de mer, Lactose, Gluten
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="menu-section" style="margin-top: 60px;">
+            <section class="menu-section menu-section-spaced">
                 <div class="menu-section-title">Desserts</div>
 
                 <div class="menu-grid">
@@ -138,7 +138,7 @@
                         </div>
                         <div class="menu-item-desc">Crème de citron acidulée, meringue italienne flambée et sorbet yuzu
                         </div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;">
+                        <div class="menu-item-allergens">
                             <i class="bi bi-exclamation-circle"></i> Oeufs, Gluten, Lactose
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                         </div>
                         <div class="menu-item-desc">Soufflé chaud au chocolat noir 70%, cœur coulant et glace vanille
                             bourbon</div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;">
+                        <div class="menu-item-allergens">
                             <i class="bi bi-exclamation-circle"></i> Oeufs, Lactose, Fruits à coque
                         </div>
                     </div>
@@ -162,37 +162,43 @@
                         </div>
                         <div class="menu-item-desc">Plateau de cinq fromages affinés, accompagnés de confiture de figues
                         </div>
-                        <div class="menu-item-allergens" style="color: #d4af37; font-size: 12px; margin-top: 8px;"><i
+                        <div class="menu-item-allergens"><i
                                 class="bi bi-exclamation-circle"></i> Lactose
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <div class="info-section">
+                <p><i class="bi bi-info-circle"></i> Allergènes : certains plats contiennent du gluten, lactose, oeufs,
+                    fruits de mer ou fruits à coque</p>
+                <p class="info-p">Tous nos plats sont préparés sur place avec des produits frais de saison.
+                </p>
             </div>
 
-            <div style="margin-top: 60px; padding: 30px; background: #1a1a1a; border-radius: 8px; color: white;">
-                <div
-                    style="font-size: 24px; font-family: 'Playfair Display', serif; margin-bottom: 20px; text-align: center; color: #d4af37;">
+            <section class="degustation-section">
+                <div class="degustation-title">
                     Menus Dégustation</div>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 25px;">
+                <div class="degustation-grid">
                     <div>
-                        <div style="font-size: 20px; font-weight: bold; color: #d4af37; margin-bottom: 10px;">Menu
+                        <div class="menu-name">Menu
                             Découverte</div>
-                        <div style="font-size: 14px; color: #aaa; margin-bottom: 15px;">4 plats</div>
-                        <div style="color: #ccc; line-height: 1.6;">
+                        <div class="menu-plats">4 plats</div>
+                        <div class="menu-desc">
                             Entrée du jour<br>
                             Poisson ou viande au choix<br>
                             Fromage<br>
                             Dessert du chef
                         </div>
-                        <div style="margin-top: 15px; font-size: 22px; font-weight: bold; color: #d4af37;">85€</div>
+                        <div class="menu-price">85€</div>
                     </div>
 
-                    <div style=" border-left: 2px solid #333; padding-left: 30px;">
-                        <div style="font-size: 20px; font-weight: bold; color: #d4af37; margin-bottom: 10px;">Menu
+                    <div class="menu-prestige">
+                        <div class="menu-name">Menu
                             Prestige</div>
-                        <div style="font-size: 14px; color: #aaa; margin-bottom: 15px;">7 plats</div>
-                        <div style="color: #ccc; line-height: 1.6;">
+                        <div class="menu-plats">7 plats</div>
+                        <div class="menu-desc">
                             Amuse-bouche<br>
                             Deux entrées<br>
                             Poisson<br>
@@ -200,24 +206,19 @@
                             Fromage<br>
                             Dessert signature
                         </div>
-                        <div style="margin-top: 15px; font-size: 22px; font-weight: bold; color: #d4af37;">145€</div>
+                        <div class="menu-price">145€</div>
                     </div>
                 </div>
 
-                <div
-                    style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #333; text-align: center; font-size: 13px; color: #888;">
+                <div class="accordion-text">
                     Accord mets-vins disponible : +45€ (Menu Découverte) / +75€ (Menu Prestige)
                 </div>
-            </div>
+            </section>
 
-            <div style="margin-top: 40px; text-align: center; font-size: 13px; color: #666;">
-                <p><i class="bi bi-info-circle"></i> Allergènes : certains plats contiennent du gluten, lactose, oeufs,
-                    fruits de mer ou fruits à coque</p>
-                <p style="margin-top: 10px;">Tous nos plats sont préparés sur place avec des produits frais de saison.
-                </p>
-            </div>
+            
         </div>
     </div>
+</main>
 
     <div class="footer">
         <div class="footer-content">
@@ -233,15 +234,15 @@
             </div>
             <div class="footer-section">
                 <div class="footer-title">Suivez-nous</div>
-                <div style="color: #888; margin-top: 10px;">
-                    <span style="margin-right: 15px; cursor: pointer;">Facebook</span>
-                    <span style="margin-right: 15px; cursor: pointer;">Instagram</span>
-                    <span style="cursor: pointer;">Twitter</span>
+                <div class="social-links">
+                    <span>Facebook</span>
+                    <span>Instagram</span>
+                    <span>Twitter</span>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p style="color: #555;">© 2026 Le Palais des Saveurs - Tous droits réservés</p>
+            <p>© 2026 Le Palais des Saveurs - Tous droits réservés</p>
         </div>
     </div>
 </body>
