@@ -1,0 +1,112 @@
+.menu-item-allergens {
+    color: #d4af37;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.menu-section-spaced {
+    margin-top: 60px;
+}
+
+.special-item {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    border: 2px solid #d4af37;
+}
+
+.special-text {
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.degustation-section {
+    margin-top: 50px;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    color: white;
+}
+
+.degustation-title {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #d4af37;
+}
+
+.degustation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.menu-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.menu-plats {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.menu-desc {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.menu-price {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.menu-prestige {
+    border-left: 2px solid #333;
+    padding-left: 30px;
+}
+
+.accordion-text {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+
+.info-section {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.info-p {
+    margin-top: 10px;
+}
+
+.social-links {
+    color: #888;
+    margin-top: 10px;
+}
+
+.social-links span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.social-links span:last-child {
+    margin-right: 0;
+}
+
+.footer-bottom p {
+    color: #999;
+}

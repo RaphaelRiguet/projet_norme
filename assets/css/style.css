@@ -1,7 +1,4 @@
-/* ============================================
-   1. RESET & BASE
-   Styles de réinitialisation et styles de base
-   ============================================ */
+
 
 * {
     margin: 0;
@@ -369,7 +366,9 @@ body {
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid #2a2a2a;
+    
 }
+
 
 /* ============================================
    7. EN-TÊTES DE PAGES
