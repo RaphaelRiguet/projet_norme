@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Le Palais des Saveurs</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo" onclick="window.location='index.html'">Le Palais des Saveurs</div>
+        <div class="nav-items">
+            <div class="nav-link" onclick="window.location='index.html'">Accueil</div>
+            <div class="nav-link" onclick="window.location='menu.html'">Notre Carte</div>
+            <div class="nav-link" onclick="window.location='galerie.html'">Galerie</div>
+            <div class="nav-link" onclick="window.location='reservation.html'">Réservation</div>
+            <div class="nav-link" onclick="window.location='histoire.html'">Notre Histoire</div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="page-title">Réservez votre table</div>
+        <div class="page-subtitle">Une expérience gastronomique inoubliable vous attend</div>
+    </div>
+
+    <div class="section-white">
+        <div class="container">
+            <div class="reservation-container">
+                <div class="reservation-info">
+                    <div
+                        style="font-size: 28px; font-family: 'Playfair Display', serif; color: #1a1a1a; margin-bottom: 20px;">
+                        Informations pratiques
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-title">Horaires</div>
+                        <div class="info-block-content">
+                            <span style="color: #d4af37;">Déjeuner :</span> 12h00 - 14h30<br>
+                            <span style="color: #d4af37;">Dîner :</span> 19h00 - 22h30<br>
+                            <span style="color: #999;">Fermé dimanche et lundi</span>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-title">Contact</div>
+                        <div class="info-block-content">
+                            <span style="color: #d4af37;">Téléphone :</span> +33 1 42 56 78 90<br>
+                            <span style="color: #d4af37;">Email :</span> contact@palais-saveurs.fr<br>
+                            <span style="color: #d4af37;">Adresse :</span> 25 Avenue des Champs, 75008 Paris
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-title">À savoir</div>
+                        <div class="info-block-content">
+                            • Réservation obligatoire<br>
+                            • Tenue correcte exigée<br>
+                            • Menu enfant disponible<br>
+                            • Accessible PMR<br>
+                            • Parking valet disponible
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px; padding: 20px; background: #f5f5f5; border-left: 4px solid #d4af37;">
+                        <div style="font-weight: bold; color: #1a1a1a; margin-bottom: 8px;">Annulation</div>
+                        <div style="font-size: 14px; color: #666; line-height: 1.6;">
+                            Toute annulation doit être effectuée au moins 24h à l'avance.
+                            En cas d'annulation tardive, un montant de 50€ par personne sera facturé.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reservation-form-container">
+                    <form class="reservation-form" onsubmit="return handleReservation(event)">
+                        <div
+                            style="font-size: 24px; font-family: 'Playfair Display', serif; color: #1a1a1a; margin-bottom: 25px; text-align: center;">
+                            Formulaire de réservation
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Prénom">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Nom">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Adresse e-mail">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Téléphone">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-input">
+                                    <option>Heure</option>
+                                    <option>12:00</option>
+                                    <option>12:30</option>
+                                    <option>13:00</option>
+                                    <option>13:30</option>
+                                    <option>14:00</option>
+                                    <option>19:00</option>
+                                    <option>19:30</option>
+                                    <option>20:00</option>
+                                    <option>20:30</option>
+                                    <option>21:00</option>
+                                    <option>21:30</option>
+                                    <option>22:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-input">
+                                <option>Nombre de personnes</option>
+                                <option>1 personne</option>
+                                <option>2 personnes</option>
+                                <option>3 personnes</option>
+                                <option>4 personnes</option>
+                                <option>5 personnes</option>
+                                <option>6 personnes</option>
+                                <option>7 personnes</option>
+                                <option>8 personnes</option>
+                                <option>Plus de 8 personnes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-input" rows="4"
+                                placeholder="Demandes particulières (allergies, régimes alimentaires, occasion spéciale...)"></textarea>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <input type="checkbox" id="newsletter" style="margin-right: 10px;">
+                            <span
+                                onclick="document.getElementById('newsletter').checked = !document.getElementById('newsletter').checked"
+                                style="cursor: pointer; font-size: 14px; color: #666;">
+                                Je souhaite recevoir les actualités du restaurant
+                            </span>
+                        </div>
+
+                        <div style="margin-bottom: 25px;">
+                            <input type="checkbox" id="cgv">
+                            <span
+                                onclick="document.getElementById('cgv').checked = !document.getElementById('cgv').checked"
+                                style="cursor: pointer; font-size: 14px; color: #666;">
+                                J'accepte les conditions générales et la politique d'annulation
+                            </span>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Confirmer ma réservation</button>
+
+                        <div style="text-align: center; margin-top: 20px; font-size: 13px; color: #999;">
+                            Vous recevrez une confirmation par email dans les 24 heures.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-dark">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <div
+                    style="font-size: 28px; font-family: 'Playfair Display', serif; color: #d4af37; margin-bottom: 15px;">
+                    Vous préférez nous appeler ?
+                </div>
+                <p style="color: #c9c9c9; line-height: 1.7;">
+                    Notre équipe est à votre disposition pour toute demande de réservation ou information
+                    complémentaire.
+                    N'hésitez pas à nous contacter par téléphone au <span style="color: #d4af37; font-weight: 600;">+33
+                        1 42 56 78 90</span>.
+                </p>
+                <div style="margin-top: 25px; color: #888; font-size: 14px;">
+                    Du mardi au samedi : 10h00 - 18h00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-title">Le Palais des Saveurs</div>
+                <p>Restaurant gastronomique étoilé Michelin</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Navigation</div>
+                <div class="footer-link" onclick="window.location='menu.html'">Notre Carte</div>
+                <div class="footer-link" onclick="window.location='reservation.html'">Réserver</div>
+                <div class="footer-link" onclick="window.location='galerie.html'">Galerie</div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Suivez-nous</div>
+                <div style="color: #888; margin-top: 10px;">
+                    <span style="margin-right: 15px; cursor: pointer;">Facebook</span>
+                    <span style="margin-right: 15px; cursor: pointer;">Instagram</span>
+                    <span style="cursor: pointer;">Twitter</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: #555;">© 2026 Le Palais des Saveurs - Tous droits réservés</p>
+        </div>
+    </div>
+</body>
+
+</html>
